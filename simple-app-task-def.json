@@ -1,5 +1,5 @@
 {
-    "family": "console-sample-app",
+    "family": "tetra-app",
     "volumes": [
         {
             "name": "my-vol",
@@ -9,8 +9,8 @@
     "containerDefinitions": [
         {
             "environment": [],
-            "name": "simple-app",
-            "image": "amazon/amazon-ecs-sample",
+            "name": "tetra-app",
+            "image": "737232247876.dkr.ecr.eu-west-1.amazonaws.com/tetranoodle:${BUILD_NUMBER}",
             "cpu": 10,
             "memory": 500,
             "portMappings": [
@@ -39,7 +39,7 @@
             "memory": 500,
             "volumesFrom": [
             {
-              "sourceContainer": "simple-app"
+              "sourceContainer": "tetra-app"
             }
             ],
             "entryPoint": [
