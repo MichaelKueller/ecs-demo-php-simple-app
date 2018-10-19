@@ -1,5 +1,5 @@
 {
-    "family": "tetra-app",
+    "family": "tetranoodle-app",
     "volumes": [
         {
             "name": "my-vol",
@@ -9,7 +9,7 @@
     "containerDefinitions": [
         {
             "environment": [],
-            "name": "tetra-app",
+            "name": "tetranoodle-app",
             "image": "737232247876.dkr.ecr.eu-west-1.amazonaws.com/tetranoodle:BUILD_NUMBER",
             "cpu": 10,
             "memory": 500,
